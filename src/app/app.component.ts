@@ -9,14 +9,14 @@ interface Todo {
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    encapsulation: ViewEncapsulation.ShadowDom
+    encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class AppComponent {
     readonly todos: Todo[] = [];
     todo: string = '';
 
     newTodo(text: string): void {
-        this.todos.unshift({text, completed: false});
+        this.todos.unshift({ text, completed: false });
         this.todo = '';
     }
 
