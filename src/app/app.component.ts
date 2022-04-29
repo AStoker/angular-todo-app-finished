@@ -12,7 +12,7 @@ interface Todo {
     encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class AppComponent {
-    readonly todos: Todo[] = [];
+    todos: Todo[] = [];
     todo: string = '';
 
     newTodo(text: string): void {
